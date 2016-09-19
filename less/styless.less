@@ -1,0 +1,56 @@
+#overlay {
+  position: fixed;
+  z-index:999;
+  background: fade(#000,50%);
+  .square(100%);
+  top:0;
+  left:0;
+  display: none;
+}
+
+.pure-g {
+  font-family:@baseFontFamily;
+}
+
+.sotials-list {
+  padding:0;
+  margin:0;
+  list-style:none;
+
+  li {
+    display: inline-block;
+    vertical-align: top;
+    margin:0 7px;
+
+    a {
+      color: #db1283;
+      .transition(0.3s color ease);
+      font-size:16px;
+      display: block;
+      text-decoration: none;
+
+      &:hover {
+        color: #b40065;
+      }
+    }
+  }
+
+  .icon-vk {
+    font-size: 20px;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .icon-trip {
+    margin-top:3px;
+  }
+}
+
+.icon-trip {
+  .size(94px,15px);
+  background: url("images/trip_logo.png") no-repeat center;
+  -webkit-background-size:100% auto;
+  background-size:100% auto;
+  display: inline-block;
+  vertical-align: top;
+}

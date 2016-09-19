@@ -1,0 +1,284 @@
+.about-block {
+  background: #fff;
+
+  .info-block {
+    width:50%;
+    padding-top:34px;
+    padding-right:30px;
+    padding-bottom:40px;
+    height:560px;
+    overflow: hidden;
+
+    .h2 {
+      margin: 0 0 17px;
+      line-height:1;
+    }
+
+    .sub-title {
+      margin-bottom:16px;
+    }
+  }
+}
+
+.about__read-more_btn {
+  color: #db1283;
+  font-size:16px;
+  text-decoration: none;
+  border-bottom:1px dashed #db1283;
+  display: inline-block;
+  margin-bottom:25px;
+  margin-top:20px;
+
+  .hide {
+    display: none;
+  }
+
+  &.active {
+    .hide {
+      display: block;
+    }
+
+    .show {
+      display: none;
+    }
+  }
+
+  &:hover {
+    border-color:transparent;
+  }
+}
+
+.about__read-more {
+  max-height:360px;
+
+  .text-block {
+    position: relative;
+    max-height:200px;
+    overflow: hidden;
+
+    &.active {
+      max-height: none;
+    }
+
+    &:after {
+      position: absolute;
+      left:0;
+      bottom:0;
+      content: '';
+      .size(100%,32px);
+      display: block;
+      z-index:10;
+      background: url("images/shadow.png");
+    }
+
+    p {
+      margin:0 0 10px;
+      font-size:16px;
+    }
+  }
+}
+
+.min-order {
+  .title {
+    font-size:14px;
+    font-weight:bold;
+    margin-bottom:18px;
+    margin-top:9px;
+  }
+
+  .icon-block {
+    float: left;
+    color: #db1283;
+    font-size: 34px;
+    overflow: hidden;
+  }
+
+  .cont {
+    width: auto;
+    margin-left: 26px;
+    margin-top: -5px;
+    font-size: 13px;
+
+    b {
+      display: block;
+    }
+  }
+
+  [class^="icon-"], [class*=" icon-"] {
+    display: inline-block;
+  }
+
+  .icon-man {
+    margin-left:-9px;
+  }
+}
+
+.pros-item {
+  text-align: center;
+  
+  .icon-block {
+    color: #db1283;
+    font-size: 34px;
+    height:40px;
+  }
+
+  p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    line-height: 1.6;
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      border-bottom: 1px dashed transparent;
+
+      &:hover {
+        border-color:#000;
+      }
+    }
+  }
+}
+
+.about__slider-wrap {
+  position: absolute;
+  top:0;
+  right:0;
+  width:50%;
+}
+
+.about__slider {
+  .item {
+    outline: 0;
+    height:560px;
+    background-position:center;
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    background-size:cover;
+    position: relative;
+  }
+
+  .text-block {
+    text-align: center;
+    position: absolute;
+    top:50%;
+    left:0;
+    width:100%;
+    .translate(0,-50%);
+
+    .icon-play {
+      color: #fff;
+      font-size:90px;
+      .transition(0.3s all ease);
+
+      &:hover {
+        color: #db1283;
+      }
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .btn__purple {
+      margin-top:50px;
+    }
+  }
+}
+
+.mCSB_scrollTools {
+  .mCSB_dragger {
+    .mCSB_dragger_bar {
+      background: #db1283!important;
+    }
+  }
+}
+
+@media(max-width:1024px) {
+  .about-block {
+    .info-block {
+      width:100%;
+      padding-right:0;
+      height:auto;
+
+      .text-block {
+        margin-bottom:10px;
+      }
+    }
+  }
+
+  .about__read-more {
+    max-height:none;
+
+    .text-block {
+      max-height:none;
+      overflow: hidden;
+    }
+  }
+
+  .about__read-more_btn {
+    display: none;
+  }
+
+  .about__slider-wrap {
+    position: static;
+    width:100%;
+    top: auto;
+    right:auto;
+  }
+
+  .about__slider {
+    .item {
+      height:400px;
+    }
+  }
+}
+
+@media(max-width:768px) {
+  .about__slider {
+    .item {
+      height:300px;
+    }
+  }
+}
+
+
+@media(max-width:568px) {
+  .about__footer {
+    > .pure-g {
+      > .pure-u-1-2 {
+        width:100%;
+      }
+    }
+  }
+
+  .min-order {
+    text-align: center;
+    margin-bottom:30px;
+
+    .icon-block {
+      float: none;
+    }
+
+    .cont {
+      display: inline-block;
+      vertical-align: top;
+      margin-left:0;
+    }
+
+    .icon-man {
+      margin-left:0;
+    }
+  }
+
+  .about__slider {
+    .item {
+      height:245px;
+
+      .btn__purple {
+        display: none;
+      }
+    }
+  }
+}

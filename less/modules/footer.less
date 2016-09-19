@@ -1,0 +1,28 @@
+#footer {
+  background: #eae3d8;
+  line-height:60px;
+  font-size:14px;
+  color: #000;
+
+  a {
+    color: inherit;
+    .transition(0.3s all ease);
+
+    &:hover {
+      color: #b40065;
+    }
+  }
+}
+
+@media(max-width: 568px) {
+  #footer {
+    text-align: center;
+    line-height:1.2;
+    padding:10px 0;
+
+    .pull-right,
+    .pull-left {
+      float: none;
+    }
+  }
+}

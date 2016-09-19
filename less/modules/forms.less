@@ -1,0 +1,70 @@
+.form-row {
+  margin-top:20px;
+  position: relative;
+
+  &:first-child {
+    margin-top:0;
+  }
+
+  .jq-selectbox {
+    width:100%;
+  }
+
+  input[type="text"],
+  textarea {
+    height:40px;
+    line-height:38px;
+    border:1px solid #a59381;
+    background: #fff;
+    color: #555555;
+    font-size:14px;
+    font-family:@PtSanse;
+    .box-shadow(0 2px 3px 0 fade(#000,15%));
+    width:100%;
+    .border-radius(4px);
+    .placeholder(#555);
+    outline: 0;
+    padding-left:19px;
+  }
+  textarea {
+    height:100px;
+  }
+
+  [class^="icon-"], [class*=" icon-"] {
+    display: inline-block;
+    color: #db1283;
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    .translate(0,-50%);
+  }
+}
+
+.jq-selectbox__select {
+  height:40px;
+  line-height:38px;
+  border:1px solid #a59381!important;
+  background: #fff!important;
+  color: #555555;
+  font-size:14px;
+  font-family:@PtSanse;
+  text-shadow: none;
+  .box-shadow(0 2px 3px 0 fade(#000,15%));
+  .border-radius(4px);
+  padding-left:19px;
+}
+
+.jq-selectbox__trigger {
+  border-left:0;
+}
+
+.jq-selectbox__trigger-arrow {
+  top:18px;
+  right:18px;
+  border-top: 5px solid #db1283!important;
+}
+
+.jq-selectbox li:hover {
+  background: #db1283;
+}
